@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game with Trees</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script> <!-- Add this line for p5.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Additional CSS styles */
+        .tree {
+            position: absolute;
+            width: 200px; /* Adjust tree size as needed */
+            height: 200px; /* Adjust tree size as needed */
+            background-image: url('assets/prop-tree.png'); /* Tree image */
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #player-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <!-- Removed redundant styling for player -->
+        <div id="player"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f0f0; /* Fallback color */
+    background-image: 
+        url('assets/background.png'), /* Background image */
+        url('assets/background.png'), /* Fallback background image */
+        linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)); /* Fallback gradient */
+    background-repeat: repeat;
+    background-position: 0 0, 50px 50px; /* Background positions */
+    background-size: 50px 50px; /* Background size */
+}
+
+#player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px; /* Adjust player size as needed */
+    height: 80px; /* Adjust player size as needed */
+    background-image: url('assets/player-regular.png'); /* Player image */
+    background-size: cover; /* Adjust as needed */
+    z-index: 1; /* Ensure player is above background */
+}
+
+
+
+.tree {
+    position: absolute;
+    width: 200px; /* Adjust tree size as needed */
+    height: 200px; /* Adjust tree size as needed */
+    background-image: url('assets/prop-tree.png'); /* Tree image */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
